@@ -18,10 +18,9 @@ body{
 	background: #e3f1f9;
 }
 .wrapper{
-	max-width: 1040px;
+	max-width: 1000px;
 	margin: 0 auto;
 	border: 1px solid transparent;
-	padding: 0 20px;
 }
 header{
 	background: #111a29;
@@ -31,11 +30,8 @@ header{
 }
 header .wrapper{
 	background: url("../images/header-bg.jpg") no-repeat right top;
-	background-size:cover;
-	-o-background-size:cover;
-	-moz-background-size:cover;
-	-webkit-background-size:cover;
-	padding: 50px 20px;
+	background-size:auto 100%;
+	padding: 50px 10px;
 }
 header p{
 	text-transform: uppercase;
@@ -50,7 +46,7 @@ h1, h2{
 	background: #bfd4de;
 }
 .step_name .wrapper{
-	padding: 20px 20px 20px 70px;
+	padding: 20px 20px 20px 50px;
 }
 .registration_form2{
 	background: #fff;
@@ -115,6 +111,9 @@ footer{
 	padding: 15px 0;
 	color: #fff;
 }
+footer .wrapper{
+	padding: 0 10px;
+}
 .right{
 	float: right;
 }
@@ -133,12 +132,11 @@ footer .left a{
 	color: #fff;
 	text-decoration: none;
 }
-
 @media screen and (max-width:768px){
 	.fifty{
 		float: none;
 		width:100%;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 	.fifty:nth-of-type(even), .fifty:nth-of-type(odd){
 		padding: 0;
@@ -150,14 +148,16 @@ footer .left a{
 		padding: 25px 30px;
 	}
 	.step_name .wrapper {
-		padding-left:50px;
+		padding-left:30px;
 	}
 	.registration_form2 p{
 		margin-bottom: 30px;
 	}
-	
+	.fifty input, .fifty select{
+		height: 35px;
+	}
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:520px){
 	.fifty input, .fifty select, label{
 		width:100%;
 	}
@@ -168,7 +168,7 @@ footer .left a{
 		padding: 20px 15px;
 	}
 	.step_name .wrapper {
-		padding-left:35px;
+		padding-left:15px;
 	}
 	.left,.right{
 		float:none;
