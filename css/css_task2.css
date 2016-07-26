@@ -588,6 +588,7 @@ li{
 	background: url("../images/task2/sprite.png") 0 -133px;
 	width: 17px;
 	height: 17px;
+	display: block;
 }
 @media screen and (max-width: 930px){
 	.font_18_7{
@@ -644,6 +645,10 @@ li{
 	.logo img{
 		margin: auto;
 	}
+	header .header_main .wrapper>div>div.cart{
+		text-align: right;
+		display: inline-block;
+	}
 	.information {
 		margin: 10px 0 20px;
 		text-align: center;
@@ -683,11 +688,11 @@ li{
 	.slider_info{
 		font-size: 24px;
 		line-height: 24px;
+		text-align: center;
 	}
-	.slider_info.slide_peaches .info_wrap, .slider_info.slide_autumn .info_wrap, .slider_info.slide_raspberries .info_wrap{
-		width: 100%;
+	.slider_info.slide_peaches .info_wrap,.slider_info.slide_autumn .info_wrap, .slider_info.slide_raspberries .info_wrap{
+		width: 95%;
 		margin-left: 0;
-		padding: 2%;
 	}
 	.button_learn_more{
 		margin: 10px auto;
@@ -696,7 +701,6 @@ li{
 	.slider label,.slider label:nth-of-type(2){
 		margin: 5px 0;
 	}
-	
 	.best_sellers .item, .why_choose_us_name{
 		margin-bottom: 10px;
 	}
@@ -756,6 +760,8 @@ li{
 		max-height: 42px;
 	}
 }
-@media screen and(max-width: 460px){
-	
+@media screen and (max-width: 460px){
+	.slider_info.slide_peaches .info_wrap,.slider_info.slide_autumn .info_wrap, .slider_info.slide_raspberries .info_wrap{
+		margin-top: -10px;
+	}
 }
